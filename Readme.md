@@ -7,3 +7,5 @@ The details of why it was created are on my blog at http://astutelogic.com/entit
 The only thing to take from this is the way to bind private properties.
 
 The particular solution for having an encrypted value in the database but unencrypted in the model, as well as the "Encryption" algorithm, shown in this solution are NOT advised for production. This is demoware only.
+
+You might need to Enable NuGet Package Restore on the solution file.
