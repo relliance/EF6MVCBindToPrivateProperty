@@ -1,0 +1,32 @@
+﻿@model MyDemo.Models.FortKnox
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FortKnox</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TopSecret)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopSecret)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherDataWeDontCareAbout)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherDataWeDontCareAbout)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
